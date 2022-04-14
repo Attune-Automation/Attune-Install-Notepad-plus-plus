@@ -1,0 +1,10 @@
+{
+    "fileName": "npp.8.1.9.2.Installer.exe", 
+    "formatKey": "unknown", 
+    "key": "notepadinstaller", 
+    "md5": "fd77f5440577aaa73effdd7e104a8ac1", 
+    "name": "Notepad++ Installer", 
+    "remoteUri": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.2/npp.8.1.9.2.Installer.exe", 
+    "size": 4112976, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

@@ -1,0 +1,11 @@
+{
+    "archiveKey": "notepadinstaller", 
+    "deployPath": "/c$/software/", 
+    "enabled": true, 
+    "key": "pushinstallerfornotepad", 
+    "name": "Push Installer for Notepad++", 
+    "osCredKey": "windowsuseradministrator", 
+    "serverKey": "notepadnode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": false
+}

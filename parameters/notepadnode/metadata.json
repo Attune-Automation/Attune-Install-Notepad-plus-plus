@@ -1,0 +1,6 @@
+{
+    "key": "notepadnode", 
+    "name": "Notepad++ Node", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WindowsServer"
+}

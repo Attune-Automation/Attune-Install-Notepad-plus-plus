@@ -1,0 +1,22 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "installnotepad", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "downloadinstallerfornotepad"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "runinstallerfornotepad"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "cleanupinstallerfornotepad"
+        }
+    ], 
+    "name": "Install Notepad++", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
