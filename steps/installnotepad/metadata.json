@@ -1,6 +1,8 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "a85b1bb4-3c59-48eb-9a21-4bb4d8803ae5", 
     "isBlueprint": true, 
     "key": "installnotepad", 
     "links": [
