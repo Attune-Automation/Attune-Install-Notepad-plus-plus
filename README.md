@@ -104,6 +104,7 @@ from Attune.
 | ---- | ---- | ---------------- | ------- |
 | Notepad++ Node | Windows Node | `notepadnode` |  |
 | Windows User: Administrator | Windows Credential | `windowsuseradministrator` |  |
+| NotePad++ Version Number | Text | `notepadversionnumber` | Eg. "8.5.5" |
 
 
 
@@ -112,7 +113,7 @@ from Attune.
 
 | Name | Type | Comment |
 | ---- | ---- | ------- |
-| Notepad++ Installer | Large Archives | https://notepad-plus-plus.org/downloads/v8.1.9.2/ |
+| Notepad++ Installer | Large Archives | https://notepad-plus-plus.org/downloads/ |
 
 
 

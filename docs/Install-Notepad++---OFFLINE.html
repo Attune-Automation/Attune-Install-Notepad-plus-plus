@@ -403,7 +403,7 @@ mstsc /admin /v:{notepadnode}
 
     <div class="row">
         <p>
-            <p>https://notepad-plus-plus.org/downloads/v8.1.9.2/</p>
+            <p>https://notepad-plus-plus.org/downloads/</p>
         </p>
         <p>
             Copy the File(s)
@@ -470,19 +470,21 @@ mstsc /admin /v:{notepadnode}
                 <code class="language-sql py-0">
 # Script Variables
 $fileLocation = &quot;c:\software\&quot;
-$installer = &quot;npp.8.1.9.2.Installer.x64.exe&quot;
+$installer = &quot;npp.{notepadVersionNumber}.Installer.x64.exe&quot;
 $software = &quot;Notepad++&quot;
 $arguments = &quot;/S&quot;
 
 # Check if the software is already installed.
-$installed = (`
+$installed = `
 Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
-where { $_.DisplayName -like &quot;$software*&quot; }) -ne $null
+where { $_.DisplayName -like &quot;$software*&quot; }
 
 if($installed) 
 {
-	Write-Host &quot;&#x27;$software&#x27; is already installed.&quot;
-}
+#Software is already installed.
+	Write-Host &quot;&#x27;$software&#x27; Version: &quot; $installed.DisplayVersion `
+	&quot;is already installed.&quot;
+} 
 else 
 {
 # install software.
@@ -491,13 +493,14 @@ else
     -ArgumentList &quot;$arguments&quot; -Wait
     
 # Confirm the software was installed.
-    $installed = (`
+    $installed = `
     Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
-    where { $_.DisplayName -like &quot;$software*&quot; }) -ne $null
+    where { $_.DisplayName -like &quot;$software*&quot; }
     
     if($installed) 
     {
-    	Write-Host &quot;&#x27;$software&#x27; was successfully installed.&quot;
+    	Write-Host &quot;&#x27;$software&#x27; Version: &quot; $installed.DisplayVersion `
+    	&quot;is already installed.&quot;
     }
     else 
     {
@@ -559,7 +562,7 @@ else
                 <code class="language-sql py-0">
 # Script Variables
 $fileLocation = &quot;c:\software\&quot;
-$installer = &quot;npp.8.1.9.2.Installer.x64.exe&quot;
+$installer = &quot;npp.{notepadVersionNumber}.Installer.x64.exe&quot;
 $software = &quot;Notepad++&quot;
 
 # Cleanup installer.

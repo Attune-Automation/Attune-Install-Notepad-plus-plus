@@ -1,6 +1,6 @@
 # Script Variables
 $fileLocation = "c:\software\"
-$installer = "npp.8.1.9.2.Installer.x64.exe"
+$installer = "npp.{notepadVersionNumber}.Installer.x64.exe"
 $software = "Notepad++"
 
 # Cleanup installer.

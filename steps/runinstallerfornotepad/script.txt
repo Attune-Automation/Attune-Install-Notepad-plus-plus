@@ -1,18 +1,20 @@
 # Script Variables
 $fileLocation = "c:\software\"
-$installer = "npp.8.1.9.2.Installer.x64.exe"
+$installer = "npp.{notepadVersionNumber}.Installer.x64.exe"
 $software = "Notepad++"
 $arguments = "/S"
 
 # Check if the software is already installed.
-$installed = (`
+$installed = `
 Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
-where { $_.DisplayName -like "$software*" }) -ne $null
+where { $_.DisplayName -like "$software*" }
 
 if($installed) 
 {
-	Write-Host "'$software' is already installed."
-}
+#Software is already installed.
+	Write-Host "'$software' Version: " $installed.DisplayVersion `
+	"is already installed."
+} 
 else 
 {
 # install software.
@@ -21,13 +23,14 @@ else
     -ArgumentList "$arguments" -Wait
     
 # Confirm the software was installed.
-    $installed = (`
+    $installed = `
     Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
-    where { $_.DisplayName -like "$software*" }) -ne $null
+    where { $_.DisplayName -like "$software*" }
     
     if($installed) 
     {
-    	Write-Host "'$software' was successfully installed."
+    	Write-Host "'$software' Version: " $installed.DisplayVersion `
+    	"is already installed."
     }
     else 
     {

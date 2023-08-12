@@ -1,11 +1,11 @@
 {
     "externalUuid4": "0337990e-0d76-4e88-a086-e7c64d779402", 
-    "fileName": "npp.8.1.9.2.Installer.exe", 
+    "fileName": "npp.8.5.5.Installer.x64.exe", 
     "formatKey": "unknown", 
     "key": "notepadinstaller", 
-    "md5": "fd77f5440577aaa73effdd7e104a8ac1", 
+    "md5": "27e7d2b1b198c50cf2a23408c0e1248e", 
     "name": "Notepad++ Installer", 
-    "remoteUri": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.2/npp.8.1.9.2.Installer.exe", 
-    "size": 4112976, 
+    "remoteUri": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.5/npp.8.5.5.Installer.x64.exe", 
+    "size": 4702496, 
     "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
 }

@@ -1,21 +1,24 @@
 # Script Variables
-$downloadLink = "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.2/npp.8.1.9.2.Installer.x64.exe"
+$downloadLink = `
+"https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v{notepadVersionNumber}/npp.{notepadVersionNumber}.Installer.x64.exe"
 $fileLocation = "c:\software\"
-$installer = "npp.8.1.9.2.Installer.x64.exe"
+$installer = "npp.{notepadVersionNumber}.Installer.x64.exe"
 $software = "Notepad++"
 
 # Check if the software is already installed.
-$installed = (`
+$installed = `
 Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
-where { $_.DisplayName -like "$software*" }) -ne $null
+where { $_.DisplayName -like "$software*" }
 
 if($installed) 
 {
-	Write-Host "'$software' is already installed."
+#Software is already installed.
+	Write-Host "'$software' Version: " $installed.DisplayVersion `
+	"is already installed."
 } 
 else 
 {
-# Download the installer
+# Download the installer.
     Write-Host "Downloading the '$software' installer..."
     if (-not (Test-Path $fileLocation)) 
     {

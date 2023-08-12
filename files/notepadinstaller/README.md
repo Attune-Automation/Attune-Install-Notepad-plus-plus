@@ -1,1 +1,1 @@
-https://notepad-plus-plus.org/downloads/v8.1.9.2/
+https://notepad-plus-plus.org/downloads/
