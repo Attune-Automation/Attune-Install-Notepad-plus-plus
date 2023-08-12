@@ -72,9 +72,27 @@ This Project contains the following Blueprints.
 
 ### Install Notepad++
 
+This Blueprint facilitates the quiet installation of Notepad++ on Windows 
+through PowerShell. The procedure is streamlined into three 
+straightforward stages:
+1. Downloading
+2. Installation
+3. Cleanup
+
+Please note that this Blueprint necessitates an active internet 
+connection during the installation of Notepad++.
 
 ### Install Notepad++ - OFFLINE
 
+This Blueprint facilitates the quiet installation of Notepad++ on Windows 
+through PowerShell. The procedure is streamlined into three 
+straightforward stages:
+1. Upload
+2. Installation
+3. Cleanup
+
+Please note that this Blueprint deploys the Notepad++ installation file 
+from Attune.
 
 
 
