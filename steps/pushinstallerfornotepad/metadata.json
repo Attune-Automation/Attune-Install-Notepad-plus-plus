@@ -1,7 +1,9 @@
 {
+    "actionOnStepFail": null, 
     "archiveKey": "notepadinstaller", 
     "deployPath": "/c$/software/", 
     "enabled": true, 
+    "externalUuid4": "53b729ee-77c3-45de-ac4d-388530b77f84", 
     "key": "pushinstallerfornotepad", 
     "name": "Push Installer for Notepad++", 
     "osCredKey": "windowsuseradministrator", 

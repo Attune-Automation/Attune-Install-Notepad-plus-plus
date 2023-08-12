@@ -1,6 +1,8 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "53356011-c870-4542-8cf0-ca657729bb70", 
     "isBlueprint": true, 
     "key": "installnotepadoffline", 
     "links": [
